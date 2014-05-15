@@ -16,7 +16,7 @@ public class Pr6_RandomHandsОf5Cards {
 		for (int i = 0; i < hands; i++) {
 			for (int j = 0; j < 5; j++) {
 				int numberCard = random.nextInt(cards.length-1) + 1;
-				int numberSuit = random.nextInt(suits.length-1) +1;
+				int numberSuit = random.nextInt(suits.length-1) + 1;
 				System.out.printf("%s%c ",cards[numberCard],suits[numberSuit]);
 			}
 			System.out.println();
