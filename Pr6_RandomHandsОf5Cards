@@ -8,10 +8,11 @@ public class Pr6_RandomHandsОf5Cards {
 	 */
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
+		Random random = new Random();
 		int hands = scan.nextInt();
 		String[] cards = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" ,"A"};
 		char[] suits = {'♣', '♦', '♥', '♠'};
-		Random random = new Random();
+		
 		
 		for (int i = 0; i < hands; i++) {
 			for (int j = 0; j < 5; j++) {
