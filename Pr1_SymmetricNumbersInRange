@@ -13,11 +13,11 @@ public class Pr1_SymmetricNumbersInRange {
 		int start = scan.nextInt();
 		System.out.print("Enter end: ");
 		int end = scan.nextInt();
-		boolean symmetric = true;
+		
 			
 		for (int i = start; i <= end; i++) {
 			char[] arr = Integer.toString(i).toCharArray();
-			symmetric = true;
+			boolean symmetric = true;
 			
 			for (int j = 0, m = 1; j < arr.length/2; j++, m++) {
 				if (symmetric) {
@@ -32,4 +32,3 @@ public class Pr1_SymmetricNumbersInRange {
 		}
 	}
 }
-
