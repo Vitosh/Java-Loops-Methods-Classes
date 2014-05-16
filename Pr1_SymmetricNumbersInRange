@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 public class Pr1_SymmetricNumbersInRange {
 
 	/**
@@ -14,16 +13,23 @@ public class Pr1_SymmetricNumbersInRange {
 		int start = scan.nextInt();
 		System.out.print("Enter end: ");
 		int end = scan.nextInt();
+		boolean symmetric = true;
 			
 		for (int i = start; i <= end; i++) {
 			char[] arr = Integer.toString(i).toCharArray();
-						
-			if (arr[0] == arr[arr.length-1]) {
+			symmetric = true;
+			
+			for (int j = 0, m = 1; j < arr.length/2; j++, m++) {
+				if (symmetric) {
+					if (arr[j] != arr[arr.length-m]) {
+						symmetric = false;
+					}
+				}
+			}
+			if (symmetric) {
 				System.out.print(i + " ");
 			}
-				
 		}
-
 	}
-
 }
+
