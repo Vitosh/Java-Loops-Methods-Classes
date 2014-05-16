@@ -16,14 +16,14 @@ public class Pr7_DaysBetweenTwoDates {
 		String dateS =  scan.next();
 		
 		String[] dateFirst = dateF.split("-");
-    String[] dateSecond = dateS.split("-");
+    		String[] dateSecond = dateS.split("-");
         
-    int yearFirst = Integer.parseInt(dateFirst[2]);
-    int monthFirst = Integer.parseInt(dateFirst[1]);
-    int dayFirst = Integer.parseInt(dateFirst[0]);
-    int yearSecond = Integer.parseInt(dateSecond[2]);
-    int monthSecond = Integer.parseInt(dateSecond[1]);
-    int daySecond = Integer.parseInt(dateSecond[0]);
+    		int yearFirst = Integer.parseInt(dateFirst[2]);
+    		int monthFirst = Integer.parseInt(dateFirst[1]);
+    		int dayFirst = Integer.parseInt(dateFirst[0]);
+    		int yearSecond = Integer.parseInt(dateSecond[2]);
+    		int monthSecond = Integer.parseInt(dateSecond[1]);
+    		int daySecond = Integer.parseInt(dateSecond[0]);
         
 		DateTime past = new DateTime(yearFirst, monthFirst, dayFirst, 0, 0); 
 		DateTime today = new DateTime(yearSecond, monthSecond, daySecond,0,0); 
