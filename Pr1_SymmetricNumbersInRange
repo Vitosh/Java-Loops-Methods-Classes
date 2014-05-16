@@ -26,9 +26,9 @@ public class Pr1_SymmetricNumbersInRange {
 			  }
 		      }
 		      
-			if (symmetric) {
-			    System.out.print(i + " ");
-			}
+		    if (symmetric) {
+			System.out.print(i + " ");
+	            }
 		}
 	}
 }
