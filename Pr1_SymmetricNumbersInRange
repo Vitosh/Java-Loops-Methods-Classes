@@ -14,7 +14,6 @@ public class Pr1_SymmetricNumbersInRange {
 		System.out.print("Enter end: ");
 		int end = scan.nextInt();
 		
-			
 		for (int i = start; i <= end; i++) {
 			char[] arr = Integer.toString(i).toCharArray();
 			boolean symmetric = true;
